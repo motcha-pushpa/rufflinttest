@@ -1,9 +1,8 @@
-def make_three_adders():
+def make_three_adders(x):
     result = []
     for i in [10, 20, 30]:
-        def add(x):
-            return x + i
-        result.append(add)
+        p = x + i
+        result.append(p)
     return result
 
 for adder in make_three_adders():
